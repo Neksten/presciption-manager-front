@@ -1,0 +1,118 @@
+.homepage {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    text-decoration: underline;
+    color: #000;
+    font-weight: 600;
+}
+
+.container {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    column-gap: 40px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 5px;
+}
+
+.mainImage {
+    max-width: 560px;
+    max-height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainImage img {
+    object-fit: contain;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.products {
+    max-width: 460px;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.productsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.product:not(:last-child) {
+    border-bottom: 1px dashed #b6b6b6;
+}
+
+.steps {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.stepName {
+    border-radius: 5px;
+    background-color: #D9E6EF;
+    padding: 4px 6px;
+    margin: 0 0 12px 0;
+    width: max-content;
+}
+
+.stepImage {
+    max-height: 330px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepImage img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.stepDescription {
+    font-size: 16px;
+    line-height: 20px;
+}

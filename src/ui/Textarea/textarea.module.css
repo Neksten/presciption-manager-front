@@ -1,0 +1,16 @@
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b6b6b6;
+    width: 100%;
+    resize: none;
+    min-height: 120px;
+}
+
+.textareaWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    font-weight: 600;
+}

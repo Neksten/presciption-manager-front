@@ -1,0 +1,35 @@
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #222;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.separator {
+    height: 15px;
+    width: 1px;
+    background-color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.link {
+    color: #fff;
+}

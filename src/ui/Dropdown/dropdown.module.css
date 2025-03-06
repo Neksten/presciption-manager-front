@@ -1,0 +1,43 @@
+.dropdown {
+    position: relative;
+    width: 200px;
+}
+
+.button {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 10px;
+    line-height: 30px;
+    position: relative;
+    text-align: start;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid black;
+}
+
+.list {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    z-index: 5000;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}

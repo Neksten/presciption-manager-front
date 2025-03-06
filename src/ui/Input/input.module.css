@@ -1,0 +1,16 @@
+.input {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #b6b6b6;
+    width: 100%;
+}
+
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    font-weight: 600;
+}

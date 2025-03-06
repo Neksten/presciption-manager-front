@@ -1,0 +1,110 @@
+{
+  "extends": ["plugin:perfectionist/recommended-natural"],
+  "plugins": ["perfectionist"],
+  "rules": {
+    "perfectionist/sort-array-includes": [
+      "error",
+      {
+        "order": "asc",
+        "spread-last": true,
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-astro-attributes": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-enums": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-exports": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length",
+        "internal-pattern": ["@/**"],
+        "newlines-between": "always",
+        "custom-groups": {
+          "value": {
+            "styles": ["./styles"],
+            "next": ["next", "next/*"],
+            "react": ["react", "react-*"]
+          },
+          "type": {
+            "next-type": ["next", "next/*"],
+            "react-type": ["react", "react-*"]
+          }
+        },
+        "groups": [
+          ["react-type", "next-type", "builtin-type", "external-type"],
+          ["react", "next", "next-other", "builtin", "external"],
+          "internal-type",
+          "parent-type",
+          "sibling-type",
+          "internal",
+          "parent",
+          "sibling",
+          "styles",
+          "side-effect"
+        ]
+      }
+    ],
+    "perfectionist/sort-interfaces": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-jsx-props": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-named-exports": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-named-imports": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-object-types": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ],
+    "perfectionist/sort-objects": "off",
+    "perfectionist/sort-union-types": [
+      "error",
+      {
+        "order": "asc",
+        "type": "line-length"
+      }
+    ]
+  }
+}
